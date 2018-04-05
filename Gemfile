@@ -16,6 +16,12 @@ gem 'sqlite3'
 # Puma is a web server. You can choose one of many servers - Puma is a Rails default, and it's fine.
 gem 'puma', '~> 3.7'
 
+# HTTParty makes web requests a little simpler.
+gem 'httparty'
+
+# Nokogiri is a library for parsing HTML
+gem 'nokogiri'
+
 group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
 end
@@ -26,4 +32,7 @@ group :development, :test do
 
   # RSpec is a great testing library.
   gem 'rspec-rails'
+
+  # We use webmock to return fake web responses for testing.
+  gem 'webmock'
 end
