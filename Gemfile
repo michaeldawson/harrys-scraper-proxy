@@ -9,9 +9,9 @@ end
 # focus on application logic.
 gem 'rails', '~> 5.1.5'
 
-# SQLite3 is a very basic database. We don't actually need a database, but it's simpler to keep it
-# here as Rails expects we'll have a database connection.
-gem 'sqlite3'
+# Postgres is a database - we don't actually need a database, but it's simpler to keep it because
+# both Rails and Heroku expect we'll have one.
+gem 'pg'
 
 # Puma is a web server. You can choose one of many servers - Puma is a Rails default, and it's fine.
 gem 'puma', '~> 3.7'
