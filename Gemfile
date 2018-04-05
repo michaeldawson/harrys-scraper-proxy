@@ -9,6 +9,10 @@ end
 # focus on application logic.
 gem 'rails', '~> 5.1.5'
 
+# We don't need this, but it keeps heroku happy without having to do more configuration
+gem 'uglifier', '>= 1.3.0'
+gem 'sass-rails', '~> 5.0'
+
 # Postgres is a database - we don't actually need a database, but it's simpler to keep it because
 # both Rails and Heroku expect we'll have one.
 gem 'pg'
