@@ -1,0 +1,8 @@
+<table>
+  <% @prices.each do |price| %>
+    <tr>
+      <th><%= price['base'] %></th>
+      <td><%= price['amount'] %></td>
+    </tr>
+  <% end %>
+</table>
